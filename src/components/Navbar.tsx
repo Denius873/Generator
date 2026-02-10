@@ -60,17 +60,6 @@ export function Navbar() {
                 {link.name}
               </a>
             )}
-            <Button
-              variant={isScrolled ? 'primary' : 'secondary'}
-              size="sm"
-              onClick={() =>
-              document.getElementById('contact')?.scrollIntoView({
-                behavior: 'smooth'
-              })
-              }>
-
-              Замовити дзвінок
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -97,17 +86,6 @@ export function Navbar() {
               {link.name}
             </a>
         )}
-          <Button
-          className="w-full"
-          onClick={() => {
-            setIsOpen(false);
-            document.getElementById('contact')?.scrollIntoView({
-              behavior: 'smooth'
-            });
-          }}>
-
-            Замовити дзвінок
-          </Button>
         </div>
       }
     </nav>);

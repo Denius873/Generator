@@ -19,11 +19,7 @@ export function HeroSection() {
       {/* Content */}
       <div className="container mx-auto px-4 md:px-6 relative z-10 pt-20">
         <div className="max-w-3xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/20 border border-orange-500/30 rounded-full mb-6 animate-fade-in">
-            <span className="text-orange-400 font-semibold text-sm tracking-wide">
-              Працюємо 24/7 по всій області
-            </span>
-          </div>
+          
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in">
             Професійний ремонт та обслуговування{' '}
