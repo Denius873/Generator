@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Send, Instagram, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Send, Instagram, Clock, Map } from 'lucide-react';
 import { motion } from 'framer-motion';
 // Viber SVG icon component
 function ViberIcon({ className }: {className?: string;}) {
@@ -180,6 +180,24 @@ export function ContactSection() {
                 <ArrowRight className="h-5 w-5" />
               </div>
             </a>
+
+            <a
+  href="https://www.google.com/maps/search/?api=1&query=вулиця+Одеська+58/1,+Одеса,+Україна"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center justify-between p-6 bg-[#34A853] text-white rounded-2xl hover:opacity-90 transition-opacity shadow-md group"
+>
+  <div className="flex items-center gap-4">
+    <Map className="h-8 w-8" />
+    <div className="text-left">
+      <p className="font-bold text-xl">Google Maps</p>
+      <p className="text-white/80 text-sm">Прокласти маршрут</p>
+    </div>
+  </div>
+  <div className="bg-white/20 p-2 rounded-full group-hover:translate-x-1 transition-transform">
+    <ArrowRight className="h-5 w-5" />
+  </div>
+</a>
           </motion.div>
         </div>
       </div>
